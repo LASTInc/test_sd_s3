@@ -1,0 +1,16 @@
+[package]
+name = "myAwsSdk"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+aws-config = "1.5.1"
+aws-sdk-dynamodb = "1.32.0"
+aws-sdk-s3 = { version = "1", features = ["behavior-version-latest"] }
+aws-credential-types = "1.2.0"
+
+
+[lib]
+name = "my_Aws_Sdk"
+crate-type = ["cdylib"]
